@@ -73,19 +73,10 @@
                    Pizza List
                 </div>
                 <p>{{ $type }} - {{ $base }} - {{ $price }}</p>
-                @if($price > 15)
-                    <p>This pizza is expensive</p>
-                @elseif( $price == 0)
-                    <p>This pizza is for free</p>
-                @elseif( $price <= 5)
-                    <p>This pizza is cheap</p>
-                @else
-                    <p>This pizza is normally priced</p>
-                @endif
-
-                @unless( $base == 'cheesy-crust')
-                    <p>You don't have cheesy-crust</p>
-                @endunless
+                
+                @for($i = 0; $i <= 5; $i++)
+                    <p>The value of i is {{ $i }}</p>
+                @endfor
         </div>
     </body>
 </html>
