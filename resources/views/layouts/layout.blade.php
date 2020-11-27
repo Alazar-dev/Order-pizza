@@ -65,6 +65,7 @@
         </style>
     </head>
     <body>
-    
+            @yield('welcome');
+            @yield('pizzaList');
     </body>
 </html>
