@@ -73,13 +73,11 @@
                    Pizza List
             </div>
                 
-            @for($i=0; $i< count($pizzas); $i++)
-                <p>{{ $pizzas[$i]['type'] }}</p>
+            @for($i=0; $i < count($pizzas); $i++)
+                <p>{{ $pizzas[$i] ['type']}}</p>
             @endfor
 
-            <!-- @foreach($pizzas as $pizza)
-                <p>$pizza</p>
-            @endforeach -->
+
         </div>
     </body>
 </html>

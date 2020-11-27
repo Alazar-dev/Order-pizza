@@ -10,9 +10,9 @@ Route::get('/', function () {
 Route::get('/pizzas', function(){
     
     $pizzas = [
-        ['type' => 'romi', 'base' =>'crust', 'price' =>15],
-        ['type' => 'lomi', 'base' => 'lust', 'price' =>10],
-        ['type' => 'yummy', 'base' => 'furst', 'price' => 5]
+        ['type' => 'romi', 'base' => 'furst', 'price' => 30],
+        ['type' => 'romi', 'base' => 'burst', 'price' => 20],
+        ['type' => 'yummy', 'base' => 'crust', 'price' => 10]
     ];
 
     return view('pizzas', ['pizzas' => $pizzas]);
