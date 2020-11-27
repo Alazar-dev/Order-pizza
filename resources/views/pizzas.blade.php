@@ -71,12 +71,15 @@
             <div class="content">
                 <div class="title m-b-md">
                    Pizza List
-                </div>
-                <p>{{ $type }} - {{ $base }} - {{ $price }}</p>
+            </div>
                 
-                @for($i = 0; $i <= 5; $i++)
-                    <p>The value of i is {{ $i }}</p>
-                @endfor
+            @for($i=0; $i< count($pizzas); $i++)
+                <p>{{ $pizzas[$i]['type'] }}</p>
+            @endfor
+
+            <!-- @foreach($pizzas as $pizza)
+                <p>$pizza</p>
+            @endforeach -->
         </div>
     </body>
 </html>
