@@ -79,7 +79,7 @@
 
             @foreach($pizzas as $pizza)
                 <div>
-                    {{$pizza['type'] }} - {{ $pizza['base'] }} - {{ $pizza['price']}}
+                {{$loop ->index}} {{$pizza['type'] }} - {{ $pizza['base'] }} - {{ $pizza['price']}}
                 </div>
             @endforeach
 
