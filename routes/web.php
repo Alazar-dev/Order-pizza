@@ -21,3 +21,9 @@ Route::get('/pizzas', function(){
         'age' => request('age')    
     ]);
 });
+
+Route::get('/pizzas/{id}', function($id){
+    return view('details', [
+        'id' => $id
+    ]);
+});
